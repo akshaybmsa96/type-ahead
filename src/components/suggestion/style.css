@@ -1,0 +1,23 @@
+.suggestion {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  text-align: start;
+  font-size: 16px;
+  color: black;
+  margin: 5px 0;
+}
+
+.suggestion img {
+  flex: 1;
+  border-radius: 50%;
+  width: 30px;
+}
+
+.suggestion span {
+  flex: 11;
+  margin: 0 10px;
+  text-overflow: ellipsis;
+  overflow: auto;
+}
