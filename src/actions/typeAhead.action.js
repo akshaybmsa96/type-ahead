@@ -6,7 +6,6 @@ export const getSearchResults = (searchQuery, dispatch) => {
   const queryParam = { q: searchQuery, type: "file" };
   getRequest(endPoints.getDetails, queryParam)
     .then((res) => {
-      console.log(res.data);
       dispatch(setList(dataTransformer(res)));
     })
     .catch((err) => {
